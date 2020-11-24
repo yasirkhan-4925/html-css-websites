@@ -1,0 +1,27 @@
+
+.text-primary{
+     color: #28a745;
+}
+
+.text-secondary{
+     color: #0284d0;
+}
+
+.flex-items{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 30px;
+}
+.icons{
+      padding: 30px;
+}
+.icons i{
+     color: white;
+     background-color: #28a745;
+     padding: 10px;
+     border-radius: 50%;
+     margin-bottom: 20px;
+}

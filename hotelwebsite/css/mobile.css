@@ -1,0 +1,95 @@
+#navbar h1 {
+    float: none;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+#navbar ul{
+   float: none;
+}
+
+#navbar ul li {
+  float: none;
+  border-bottom: dotted grey 1px;
+}
+
+
+
+#navbar ul li a {
+    display:block;
+    padding: 20px;
+    text-align: center;
+   
+  }
+
+
+  #showcase {
+    background: url(../images/showcase.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+  }
+
+  .homeinfo__image{
+   display: none;
+  }
+  
+  .homeinfo__content{
+    width: 100%;
+    float: none;
+    text-align: center;
+    overflow: hidden;
+    padding:30px 20px;
+    background-color: #333;
+   height: 100%;
+  }
+
+  #features .box{
+   
+    width:100%;
+    float:none;
+    text-align:center;
+    padding: 50px;
+
+  }
+
+
+  .aboutinfo__left{
+    width: 100%;
+    float: none;
+    height: 100%;
+    padding: 30px;
+  }
+
+  .aboutinfo__right{
+    width: 100%;
+    float:none;
+    padding: 30px;
+     
+  }
+
+
+  #testomonials{
+    height:100%;
+    background: url('../images/test-bg.jpg') no-repeat center center/cover ;
+  }
+
+
+  #contactinfo .box{
+   
+    width:100%;
+    float: none;
+    text-align: center;
+    padding: 50px;
+    border-bottom: dotted grey 1px;
+
+  
+  }
+
+  #showcase .showcase__content {
+    text-align: center;
+    padding: 70px;
+  }
+  
+
+

@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    
+}
+
+
+body{
+     font-family: 'Open Sans' ,sans-serif;
+     background-color: white;
+     color: #333;
+     line-height: 1.6;
+}
+
+ul{
+     list-style-type: none;
+}
+
+
+a{
+    color:#333;
+    text-decoration: none;
+}
+
+h1,h2{
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p{
+    margin: 10px 0;
+}
+
+img{
+     width: 100%;
+}
+
+/* navbar css */
+
+
+.navbar{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #333;
+     color: white;
+    
+     height: 70px;   
+     opacity: 0.9;
+     width: 100%;
+     position: fixed;
+     top: 0px;
+     padding: 0 30px;
+     z-index:20;
+}
+
+.top{
+      background-color: transparent;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+     color: white;
+     padding: 10px 20px;
+     magrin:0 10px;
+}
+
+.navbar a:hover{ 
+    border-bottom: #28a745 2px solid;   
+   
+}
+
+.navbar.logo{
+     font-weight: 400;
+}
+
+.hero{
+     background: url('../images/home/showcase.jpg') no-repeat center center/cover;
+     height: 100vh;
+
+}
+
+.hero .content{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+}
+
+.hero .content h1{
+     color: white;
+     font-size: 50px;
+     font-weight: bold;
+     text-align: center;
+}
+
+.hero .content p{
+     color: white;
+     font-size: 20px;
+     text-align: center;
+}
+
+.hero .content a{
+     color: white;
+     background-color:#28a745 ;
+     padding: 10px 30px;
+     border-radius: 10px;
+}
+.hero .content a:hover{
+    opacity: 0.9;
+}
+
+.hero::before{
+     content:"";
+     position: absolute;
+     background-color: rgba(0, 0,0,0.6);
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+
+    
+}
+
+.hero * {
+     z-index: 10;
+}
+
+
+
+/* about section  */
+
+
+.aboutsolutions__container{
+      display: flex;
+      flex-wrap: wrap;
+    
+      
+}
+
+.aboutsolutions__img{
+         flex: 0.5;
+         
+}
+
+.aboutsolutions__img img{
+     height: 100%;
+     object-fit: cover;
+     
+}
+
+
+.aboutsolutions__text{
+      flex: 0.5;
+      background-color: #28a745;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      
+      justify-content: center;
+      align-content: flex-start;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+}
+
+.aboutsolutions__text h4{
+     font-size: 13px;
+}
+.aboutsolutions__text p{
+     text-align: justify;
+}
+.aboutsolutions__text h2{
+     font-weight: bold;
+}
+
+.aboutsolutions__text button{
+      width: 150px;
+      padding: 15px 20px;
+      background-color: #28a745;
+      color: white;
+      outline: none;
+      border: 1px solid white;
+      margin-top: 20px;
+      border-radius: 10px;
+}
+
+#contactform{
+ display: flex;
+ flex-direction: column;
+}
+
+
+
+
+/* show case css */
+
+.showcase__container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-content: center;
+      padding: 30px;
+}
+
+
+.showcase__column img:hover{
+      opacity: 0.7;
+}
+
+.showcase__row{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+}
+.showcase__column{
+      flex: 0.25;
+      margin: 3px 3px;
+}
+
+
+
+/* blog section css */
+
+
+.blogsection__container{ 
+     display: flex;
+     flex-direction: row-reverse;
+    
+}
+
+.blogcolor{
+      background-color: blue;
+}
+
+.blogbtn{
+      background-color: blue !important ;
+} 
+
+
+
+
+/* team section css 
+ */
+
+
+ .teamimages__container{
+       display: flex;
+       align-content: center;
+       justify-content: space-evenly;
+     
+ }
+
+ .teamimages__image{
+       margin: 10px 10px;
+      
+       
+ }
+
+ .teamimages__image img{
+   border-radius: 50%;
+    
+     
+}
+
+
+
+
+/* contact section css  */
+
+
+
+.contactcolor{
+      background-color: lightgrey;
+      color: black;
+      flex-direction: row;
+}
+
+
+.contactsection__form{
+     flex: 0.5;
+     background-color: #F7F4F4 ;
+     color: black;
+     display: flex;
+     flex-direction: column;
+     
+     justify-content: center;
+     align-content: flex-start;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+}
+
+#contactform{
+     display: flex;
+     flex-direction: column;
+
+    }
+
+    #contactform input{
+     padding: 10px;
+     margin: 10px 0;
+     outline: none;
+     border: none;
+     border-radius: 5px;
+    }   
+
+    #contactform input:focus{
+     border: 1px solid #28a745;
+    }   
+
+    #contactform h1{
+     font-weight: bold;
+     font-size: 30px;
+    }  
+
+    #contactform button{
+     padding: 10px 20px;
+     background-color: #28a745;
+     color: white;
+     border-radius: 10px; 
+     border: none;
+     outline: none;
+     margin-top: 20px;
+    }  
+
+/* 
+ #contactform h1{
+      color: white;
+ }    */
+
+
+ #contactsection{
+       margin-top: 30px;
+ }
+
+
+
+ /* footer css  */
+
+
+ #footer{
+       background-color: #2F2B2B ;
+       padding: 20px;
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+      
+       
+ }
+
+ #footer i {
+       color: white;
+ }
+
+ #footer a {
+      margin: 0 25px;
+}
+
+#footer a i:hover {
+color: #28a745;
+}
+
+
+@media (max-width:768px){
+     .blogsection__container{ 
+          display: flex;
+          flex-direction: column;
+         
+     }
+     .navbar{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #333;
+          color: white;
+         
+          height: 120px;   
+          opacity: 0.9;
+          width: 100%;
+          position: fixed;
+          top: 0px;
+          padding: 20px 20px;
+     }
+
+     .navbar ul{
+           margin-top:15px;
+     }
+
+     .navbar a {
+           padding: 10px;
+           margin: 5px;
+     }
+
+     .flex-items{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          padding: 30px;
+    }
+    .aboutsolutions__img{
+     flex: 100%;
+     
+}
+.aboutsolutions__text{
+     flex: 100%;
+     background-color: #28a745;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     
+     justify-content: center;
+     align-content: flex-start;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+}
+.showcase__column{
+     flex: 40%;
+     margin: 3px 3px;
+}
+.blogcolor{
+     background-color: blue;
+}
+.teamimages__container{
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     justify-content: space-evenly;
+   
+}
+
+.teamimages__image{
+     margin: 10px 150px;
+     
+
+    
+     
+}
+
+.teamimages__image img{
+ border-radius: 50%;
+ 
+ 
+  
+   
+}
+
+}
+ 
+@media (max-width:368px){
+     .navbar a {
+          padding: 5px;
+          margin: 5px;
+    }
+    .showcase__column{
+     flex: 100%;
+     margin: 3px 3px;
+}
+}
+
+@media(max-width:500px){
+     .teamimages__image{
+          margin: 10px 10px;
+          
+     
+         
+          
+     }
+}
